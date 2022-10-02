@@ -10,6 +10,7 @@ struct Message {
 int main() {
   // remember to delete after use
   // init the instance
+  // remember to setup the global g_icnt_interface pointer!
   g_icnt_interface = InterconnectInterface::New("examples/2060.config");
 
   // create the nodes and routers
