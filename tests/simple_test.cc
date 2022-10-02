@@ -76,6 +76,7 @@ int main() {
       auto msg = (Message *)g_icnt_interface->Pop(i);
       if (msg) {
         ++received[i];
+        // remmeber to delete the message!!!
         delete msg;
       }
     }
